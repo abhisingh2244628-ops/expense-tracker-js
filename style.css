@@ -1,0 +1,139 @@
+/* ========================
+   GLOBAL STYLES
+======================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+/* ========================
+   HEADINGS
+======================== */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #e0e0ff;
+    text-shadow: 0 0 5px #7f7fff;
+}
+
+/* ========================
+   FORM
+======================== */
+form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #6c63ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #5752d1;
+}
+
+/* ========================
+   BALANCE
+======================== */
+#balance {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.05);
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* ========================
+   TRANSACTION LIST
+======================== */
+#transaction-list {
+    list-style: none;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#transaction-list li {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#transaction-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+}
+
+#transaction-list button {
+    background: #ff4d4d;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#transaction-list button:hover {
+    background: #e60000;
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+======================== */
+@media(max-width: 500px) {
+    input {
+        width: 100%;
+        margin: 5px 0;
+    }
+    button[type="submit"] {
+        width: 100%;
+    }
+}
